@@ -152,7 +152,7 @@ class Board:
                 elif skipped:
                     moves[(r, left)] = last + skipped
                 else:
-                    moves[(r, left)] = last
+                    moves[(r, left)] = last + skipped
 
                 if last:
                     if step == -1:
@@ -188,7 +188,7 @@ class Board:
                 elif skipped:
                     moves[(r, right)] = last + skipped
                 else:
-                    moves[(r, right)] = last
+                    moves[(r, right)] = last + skipped
 
                 if last:
                     if step == -1:
